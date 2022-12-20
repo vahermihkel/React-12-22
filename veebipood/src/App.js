@@ -7,7 +7,7 @@ import Ostukorv from "./pages/Ostukorv";
 function App() {
   return (
     <div className="App">
-      <Link to="/avaleht">
+      <Link to="/">
         <img className="pilt" src="https://estonia.ee/wp-content/uploads/nobe_netist_4.jpg" alt="" />
       </Link>
       <Link to="/ostukorv">
@@ -17,9 +17,11 @@ function App() {
         <span>Toodet lisama</span>
       </Link>
 
-
+{/* kommentaar: ctrl + ä VÕI "Edit -> Toggle line comment"
+  localhost:3000    näidatakse Avaleht.js faili sisu
+*/}
       <Routes>
-        <Route path="avaleht" element={ <Avaleht /> } />
+        <Route path="" element={ <Avaleht /> } />
         <Route path="ostukorv" element={ <Ostukorv /> } />
         <Route path="lisa-toode" element={ <LisaToode /> } />
       </Routes>
